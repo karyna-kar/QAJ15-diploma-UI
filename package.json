@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "format": "npx prettier --write .",
-    "test": "npx playwright test"
+    "test_e2e": "npx playwright test --project=e2e-tests"
   },
   "devDependencies": {
     "@playwright/test": "^1.60.0",
