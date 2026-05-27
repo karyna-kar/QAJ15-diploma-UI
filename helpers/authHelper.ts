@@ -1,4 +1,4 @@
-import { existsSync, readFileSync } from 'fs';
+import { readFileSync } from 'fs';
 
 export class AuthHelper {
   static isTokenExpired(filePath: string): boolean {
@@ -14,7 +14,6 @@ export class AuthHelper {
   }
 
   static readExistingToken() {
-    //djkdfj
     const filePath = '.auth/loggedin-user-state.json';
     const fileData = readFileSync(filePath, 'utf-8');
     const parsedData = JSON.parse(fileData);

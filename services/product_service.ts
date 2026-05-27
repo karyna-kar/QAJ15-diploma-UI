@@ -10,7 +10,7 @@ export class ProductService {
     return allProducts.data;
   }
 
-  async filterInStockProducts(products: Product[], inStock: boolean): Promise<Product[]> {
+  async filterInStockProducts(products: Product[], inStock: boolean){
     const filteredProducts = products.filter((product: any) => product.in_stock === inStock);
     return filteredProducts;
   }
